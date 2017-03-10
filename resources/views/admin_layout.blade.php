@@ -12,28 +12,22 @@
 </head>
 <body>
 
-		<div class="container">
+		<div class="container-fluid">
 
            <div class="row">
-             <div class="col-md-12">
+             <div class="col-sm-12">
                 <ul class="nav nav-tabs nav-justified">
-                  <li><a href="{{URL('/')}}">Home</a></li>
+                  <li><a href="{{URL('/admin')}}">Home</a></li>
                   <li><a href="{{URL('')}}">Page 1</a></li>
                   <li><a href="{{URL('')}}">Page 2</a></li>
                   <li><a href="{{URL('')}}">Page 3</a></li>
                 </ul>
              </div>
            </div>
-            <div class="row">
-             
 
-    
-           </div>
+
            <div class="row">
-
-
- 
-             <div class="col-md-4">
+             <div class="col-md-2">
                   <h5> 
                       <ul class= "nav">
                        <li><a href="{{URL('')}}" class="btn btn-success">Manage Bookings</a></li>
@@ -46,7 +40,7 @@
                   </h5>
              </div>
        
-         <div class="col-md-8">
+         <div class="col-md-10">
                 @yield('main-content')               
              </div>
 
