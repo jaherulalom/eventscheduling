@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Service;
 
 class ServicesController extends Controller
 {
@@ -17,6 +18,8 @@ class ServicesController extends Controller
     public function index()
     {
         //
+        $services =  Service::all();
+        return view ('admin.services', compact('services'));
     }
 
     /**

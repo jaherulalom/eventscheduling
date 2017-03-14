@@ -35,11 +35,10 @@ Route::get('bookings/create', 'BookingController@create');
 // 
 Route::resource('bookings', 'BookingController');
 
-Route::resource('services', 'ServicesController');
-
 Route::group(['prefix' => 'admin'], function(){
 		Route::resource('users', 'UserController');
 		Route::resource('bookings', 'BookingController');
+		Route::resource('services', 'ServicesController');
 });
 
 

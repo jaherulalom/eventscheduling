@@ -10,9 +10,9 @@
 <div class="row">
 	      <div class="col-sm-12">
                 <ul class="nav nav-tabs nav-justified">
-                  <li><a href="{{URL('admin/users/create')}}" class="btn btn-primary">Create New Booking</a></li>
-                  <li><a href="{{URL('')}}">View Bookings</a></li>
-                  <li><a href="{{URL('')}}">Page 3</a></li>
+                  <li><a href="{{URL('admin/bookings/create')}}" class="btn btn-primary">Create New Booking</a></li>
+                  <li><a href="{{URL('#')}}">View Bookings</a></li>
+                  <li><a href="{{URL('#')}}">Set Availability</a></li>
                 </ul>
            </div>
 </div>
@@ -25,8 +25,8 @@
 			<table class="table table-bordered">
 				<tr>
 					<th>Booking ID</th>
-					<th>User ID</th>
-					<th>Service ID</th>
+					<!-- <th>User ID</th>
+					<th>Service ID</th> -->
 					<th>Booking Price</th>
 					<th>Booking Duration</th>
 					<th>Booking Date</th>
@@ -35,8 +35,8 @@
 				@foreach ($bookings as $booking)
 					<tr>
 						<td>{{$booking->id}}</td>
-						<td>{{$booking->user_id}}</td>
-						<td>{{$booking->service_id}}</td>
+					<!-- 	<td><a href="">{{$booking->user_id}}</a></td>
+						<td>{{$booking->service_id}}</td> -->
 						<td>£{{$booking->service_price}}</td>
 						<td>{{$booking->service_time}} minutes</td>
 						<td>{{$booking->booking_date}}</td>

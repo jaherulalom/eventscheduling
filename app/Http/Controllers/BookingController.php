@@ -24,7 +24,8 @@ class BookingController extends Controller
     {
         //
         $bookings = Booking::all();
-        return view ('admin.booking', compact('bookings') );
+        $users = User::all();
+        return view ('admin.booking', compact('bookings', 'users') );
         
     }
 
@@ -36,8 +37,9 @@ class BookingController extends Controller
     public function create()
     {
         //
+        $details = Service::all();
         $services = \DB::table('services')->lists("name", "id");
-        return view ('reservations', compact('services'));
+        return view ('reservations', compact('services', 'details'));
     }
 
     /**

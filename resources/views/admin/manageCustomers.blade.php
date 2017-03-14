@@ -13,7 +13,6 @@
                   <li><a href="{{URL('admin/users/create')}}" class="btn btn-primary">Create New User</a></li>
                   <li><a href="{{URL('admin/customers')}}" class="btn btn-info">Manage Customers</a></li>
                   <li><a href="{{URL('admin/staff')}}" class="btn btn-warning">Manage Staff</a></li>
-                  <li><a href="{{URL('')}}">Page 3</a></li>
                 </ul>
            </div>
 </div>

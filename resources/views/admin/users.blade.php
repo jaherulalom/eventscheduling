@@ -12,8 +12,7 @@
                 <ul class="nav nav-tabs nav-justified">
                   <li><a href="{{URL('admin/users/create')}}" class="btn btn-primary">Create New User</a></li>
                   <li><a href="{{URL('admin/customers')}}" class="btn btn-info">Manage Customers</a></li>
-                  <li><a href="{{URL('')}}">Manage Staff</a></li>
-                  <li><a href="{{URL('')}}">Page 3</a></li>
+                  <li><a href="{{URL('')}}" class="btn btn-warning">Manage Staff</a></li>
                 </ul>
            </div>
 </div>

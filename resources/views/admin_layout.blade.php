@@ -33,7 +33,7 @@
                        <br />
                        <li><a href="{{URL('admin/users')}}" class="btn btn-success">Manage Users</a></li>
                        <br />
-                       <li><a href="{{URL('')}}" class="btn btn-success">Manage Services</a></li>
+                       <li><a href="{{URL('admin/services')}}" class="btn btn-success">Manage Services</a></li>
                        <br />
                       </ul>
                   </h5>
