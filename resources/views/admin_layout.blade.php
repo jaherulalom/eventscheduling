@@ -6,8 +6,7 @@
   <link rel="stylesheet" href="{{URL::asset('css/app.css')}}">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="{{ asset('bower_components/sweetalert/dist/sweetalert.min.js') }}"></script>
-<link rel="stylesheet" type="text/css" href="{{ asset ('bower_components/sweetalert/dist/sweetalert.css') }}">
+
 
 </head>
 <body>
@@ -30,9 +29,9 @@
              <div class="col-md-2">
                   <h5> 
                       <ul class= "nav">
-                       <li><a href="{{URL('')}}" class="btn btn-success">Manage Bookings</a></li>
+                       <li><a href="{{URL('admin/bookings')}}" class="btn btn-success">Manage Bookings</a></li>
                        <br />
-                       <li><a href="{{URL('')}}" class="btn btn-success">Manage Users</a></li>
+                       <li><a href="{{URL('admin/users')}}" class="btn btn-success">Manage Users</a></li>
                        <br />
                        <li><a href="{{URL('')}}" class="btn btn-success">Manage Services</a></li>
                        <br />

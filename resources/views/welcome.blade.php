@@ -14,7 +14,7 @@
 
         <div class="row">
             <div class="col-md-6">
-                <a href="{{'#'}}" class="btn btn-primary">Making a booking</a>
+                <a href="{{'/bookings/create'}}" class="btn btn-primary">Making a booking</a>
             </div>
             <div class="col-md-6">
 
